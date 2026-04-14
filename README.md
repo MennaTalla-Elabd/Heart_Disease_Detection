@@ -49,12 +49,33 @@ The system consists of three main components:
 
 ```id="7dj3h1"
 heart_project/
-│── data/                  # Raw and processed datasets
-│── ml_model/              # Training and prediction scripts
-│── expert_system/         # Rule-based inference engine
-│── app.py                 # Streamlit web application
-│── requirements.txt       # Project dependencies
-│── README.md              # Project documentation
+├── data/
+│   ├── raw_data.csv
+│   ├── cleaned_data.csv
+│
+├── ml_model/
+│   ├── train_model.py
+│   ├── predict.py
+│   ├── decision_tree_model.pkl
+│
+├── expert_system/
+│   ├── rules.py
+│   ├── expert_system.py
+│
+├── utils/
+│   ├── data_processing.py
+│
+├── comparison/
+│   ├── compare_models.py
+│   ├── accuracy_comparison.md
+│
+├── app/
+│   ├── streamlit_app.py
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── LICENSE
 ```
 
 ---
