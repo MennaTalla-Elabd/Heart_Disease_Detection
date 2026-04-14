@@ -1,0 +1,127 @@
+# 🫀 Heart Disease Detection Project  
+## 📊 Accuracy Comparison Report
+
+---
+
+# 1. Introduction
+This report compares two approaches for heart disease prediction:
+
+- Rule-Based Expert System
+- Machine Learning Model (Decision Tree Classifier)
+
+Both models were evaluated using the same dataset and feature set to ensure a fair comparison.
+
+The goal is to evaluate the trade-off between:
+- Accuracy (Machine Learning)
+- Interpretability (Rule-Based System)
+
+---
+
+# 2. Dataset Description
+The dataset contains medical attributes used for heart disease prediction:
+
+### Features:
+- cp (Chest Pain Type)
+- thalach (Maximum Heart Rate Achieved)
+- slope (Slope of ST segment)
+- age
+- sex
+- thal
+- ca (Number of major vessels)
+- oldpeak (ST depression)
+- exang (Exercise induced angina)
+
+### Target:
+- 0 → No Heart Disease  
+- 1 → Heart Disease  
+
+---
+
+# 3. Data Preparation
+- Missing values handled (drop/impute)
+- Feature scaling using MinMaxScaler
+- Categorical encoding using One-Hot Encoding
+- Train/Test split: 80/20
+
+---
+
+# 4. Evaluation Metrics
+Both models were evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+
+---
+
+# 5. Results
+
+===== Decision Tree =====
+Accuracy: 0.8097560975609757
+Precision: 0.8555555555555555
+Recall: 0.7475728155339806
+F1-score: 0.7979274611398963
+
+===== Expert System =====
+Accuracy: 0.33658536585365856
+Precision: 0.2676056338028169
+Recall: 0.18446601941747573
+F1-score: 0.21839080459770116
+---
+
+# 6. Analysis
+
+## Decision Tree
+- Learns patterns automatically from data
+- Higher predictive performance
+- Better generalization
+- Less interpretable
+
+## Expert System
+- Based on human-defined rules
+- Highly interpretable
+- Limited flexibility
+- Over-predicts positive cases
+
+---
+
+# 7. Explainability
+
+### Expert System:
+- Fully transparent rules
+- Easy to interpret medically
+
+### Decision Tree:
+- Partially interpretable
+- Can be visualized
+- Learns hidden relationships
+
+---
+
+# 8. Limitations
+
+### Expert System:
+- Depends on manual thresholds
+- Not adaptive to new data
+
+### Decision Tree:
+- Can overfit
+- Less explainable than rules
+
+---
+
+# 9. Conclusion
+The Decision Tree model outperformed the Rule-Based System in accuracy and overall performance.
+
+However, the Expert System is more interpretable and useful for decision support.
+
+A hybrid approach combining both methods is recommended for real-world healthcare systems.
+
+---
+
+# 10. Recommendation
+- Use Machine Learning for prediction accuracy  
+- Use Rule-Based systems for interpretability  
+- Future work should explore hybrid AI models  
+
